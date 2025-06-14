@@ -2,7 +2,7 @@
 ## ☕ An E-commerce Café Platform
 This project is a comprehensive full-stack e-commerce website designed for a cafe, allowing customers to browse a menu, add items to a shopping cart, place orders, and generate bills. It also includes an analytics dashboard to track top-selling items.
 
-✨ **_Features_**
+✨ **_Features:_**<br>
 **Interactive Menu Display:** Browse food and drink items categorized for easy navigation.
 
 **Customer Authentication:** Secure user login functionality using a custom Customer model.
@@ -22,74 +22,21 @@ This project is a comprehensive full-stack e-commerce website designed for a caf
 **Error Handling & Data Integrity:** Includes server-side checks (e.g., for empty carts, missing menu items) and database transactions for data consistency.
 
 🛠️ **_Technologies Used:_**
-**Backend:**
-Python 3.12
-Django Framework
+**Backend:**<br>
+Python 3.12<br>
+Django Framework<br>
 
-**Frontend:**
-HTML5
+**Frontend:**<br>
+HTML5<br>
 CSS3
 
-**Database:**
+**Database:**<br>
 SQLite
 
-**Libraries / APIs:**
-plotly: For creating interactive data visualizations.
-fpdf: For generating PDF bills.
+**Libraries / APIs:**<br>
+plotly: For creating interactive data visualizations.<br>
+fpdf: For generating PDF bills.<br>
 Django's ORM: For database interactions.
-
-🚀 Installation & Setup
-Follow these steps to get a local copy of the project up and running on your machine.
-
-Prerequisites
-Python 3.12
-
-pip (Python package installer)
-
-git
-
-Steps
-Clone the repository:
-
-git clone [YOUR_REPOSITORY_URL_HERE]
-cd BhoitesCafeWebsite # Replace with your actual project folder name
-
-
-Create and activate a virtual environment:
-
-python -m venv venv
-# On macOS/Linux:
-source venv/bin/activate
-# On Windows:
-.\venv\Scripts\activate
-
-
-Install project dependencies:
-
-pip install -r requirements.txt
-
-
-Note: If you haven't created requirements.txt yet, you can do so by running pip freeze > requirements.txt after installing Django, plotly, fpdf, etc.
-
-Apply database migrations:
-
-python manage.py makemigrations
-python manage.py migrate
-
-
-Create a superuser (optional, but recommended for admin access):
-
-python manage.py createsuperuser
-
-
-Follow the prompts to create your admin user.
-
-Run the development server:
-
-python manage.py runserver
-
-
-The application will be accessible at http://127.0.0.1:8000/.
 
 💡 Usage
 Navigate to the Home Page: Open http://127.0.0.1:8000/ in your browser.
@@ -107,3 +54,8 @@ Place Order: Proceed to place your order.
 Generate Bill: After placing an order, download a PDF bill for your records.
 
 Analytics: Visit the analytics page (e.g., /analytics/ or as per your urls.py) to see visualizations of best-selling products.
+
+
+## Authors
+
+- [@Sailesh Bhoite](https://github.com/Sailesh-Bhoite)
