@@ -38,24 +38,6 @@ plotly: For creating interactive data visualizations.<br>
 fpdf: For generating PDF bills.<br>
 Django's ORM: For database interactions.
 
-💡 Usage
-Navigate to the Home Page: Open http://127.0.0.1:8000/ in your browser.
-
-Register/Login: Create a new customer account or log in if you already have one.
-
-Browse Menu: Explore the categorized menu items.
-
-Add to Cart: Specify quantities for desired items and click the "Cart" button in the header to add them.
-
-View Cart: Review your selected items and make any final quantity adjustments.
-
-Place Order: Proceed to place your order.
-
-Generate Bill: After placing an order, download a PDF bill for your records.
-
-Analytics: Visit the analytics page (e.g., /analytics/ or as per your urls.py) to see visualizations of best-selling products.
-
-
 ## Authors
 
 - [@Sailesh Bhoite](https://github.com/Sailesh-Bhoite)
