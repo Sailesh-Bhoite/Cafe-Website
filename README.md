@@ -38,6 +38,8 @@ plotly: For creating interactive data visualizations.<br>
 fpdf: For generating PDF bills.<br>
 Django's ORM: For database interactions.
 
+## [Click here](https://www.linkedin.com/posts/sailesh-bhoite_django-python-webdevelopment-activity-7339626412946919425-2C94?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEgWZHsBTswwPEbC-Z3cAWUiezWgCnj6xf4) for Demo Video.
+
 ## Authors
 
 - [@Sailesh Bhoite](https://github.com/Sailesh-Bhoite)
