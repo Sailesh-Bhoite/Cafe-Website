@@ -1,4 +1,4 @@
-Bhoite's Cafe Website<br>
+#Bhoite's Cafe Website
 ☕ An E-commerce Platform for Cafes
 This project is a comprehensive full-stack e-commerce website designed for a cafe, allowing customers to browse a menu, add items to a shopping cart, place orders, and generate bills. It also includes an analytics dashboard to track top-selling items.
 
