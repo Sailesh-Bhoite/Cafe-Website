@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Placed Successfully</title>
+    <style>
+        div{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        .order-complete-gif{
+            width: 40%;
+        }
+        .download-bill-button{
+            padding: 10px 30px;
+            border: 1px solid black;
+            border-radius: 15px;
+            background-color: white;
+            text-decoration: none;
+        }
+        .download-bill-button:hover{
+            color: #0033ff;
+        }
+        .download-bill-gif{
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h1 style="color: green">Order Placed!</h1>
+</div>
+<div>
+    <h3 style="color: blue">Your order will be soon in your hands.</h3>
+</div>
+<div class="order-complete-container">
+    <img src="/static/images/order_placed-gif.gif" alt="Order Placed!" class="order-complete-gif">
+</div>
+<div class="download-bill-container">
+    <button onclick="alert('Your Bill is downloaded')" class="download-bill-button"><a href="{% url 'DownloadBill' %}?order_id={{ order.id }}" ><img src="/static/images/download_bill-gif.gif" alt="download bill" class="download-bill-gif"><br>Download Bill</a></button>
+</div>
+<script>
+
+</script>
+</body>
+</html>

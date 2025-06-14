@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="/static/css/cart.css">
+</head>
+<body>
+
+{% include 'navbar_logged.html' %}
+
+{% if total_amount == 0 %}
+    <div class="space-block"></div>
+    <div class="no-cart">
+        <h1>Your Cart is Empty</h1>
+        <h3 style="color: #006b1b">Please select menu items. Your selected items will be seen here.</h3>
+        <img src="/static/images/empty_cart-img.jpeg" alt="Empty Cart">
+    </div>
+{% else %}
+    <div class="space-block"></div>
+<div class="cart">
+    <h2>Your Cart</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Sr. No.</th>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Rate</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for item in cart_items %}
+            <tr>
+            <td>{{ forloop.counter }}</td>
+                <td>{{ item.name }}</td>
+                <td>{{ item.quantity }}</td>
+                <td>₹{{ item.price }}</td>
+                <td>₹{{ item.total }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan=4><strong>Total</strong></td>
+                <td><strong>₹{{ total_amount }}</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+
+<div class="place-order-flex">
+    <button class="place-order-button"><a href="/order-placed/"><img class="place-order-image" alt="place order image" src="/static/images/cooking-img.png"><br>Place Order</a></button>
+</div>
+{% endif %}
+</body>
+</html>

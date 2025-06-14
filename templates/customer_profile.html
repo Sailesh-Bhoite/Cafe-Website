@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bhoite's Cafe | Profile</title>
+    <style>
+    .profile-container {
+        border: 2px solid #4CAF50;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 20px auto;
+        width: 600px;
+        background-color: #f9f9f9;
+        text-align: center;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+    .profile-container h1 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+    .profile-container button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 5px 0;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .profile-container button.logout {
+        background-color: red;
+    }
+    .profile-container button a {
+        color: white;
+        text-decoration: none;
+    }
+    .profile-container button a:hover {
+        text-decoration: underline;
+    }
+    .space-block{
+        height: 50px;
+    }
+</style>
+
+</head>
+<body>
+{% include 'navbar_logged.html' %}
+<div class="space-block"></div>
+<div class="profile-container">
+    <h1>User Name: {{ customer.name }}</h1>
+    <h1>Password: {{ customer.password }}</h1>
+    <button class="logout"><a href="/logout/">Logout</a></button>
+</div>
+
+</body>
+</html>

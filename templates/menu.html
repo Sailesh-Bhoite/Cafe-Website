@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <title>Bhoite's Cafe | Menu</title>
+    <link rel="stylesheet" href="/static/css/menu.css">
+</head>
+<body>
+<!-- Deciding Navbar -->
+{% if log_in %}
+    {% include 'navbar_logged.html' %}
+{% else %}
+    {% include 'navbar.html' %}
+{% endif %}
+
+    <div class="main">
+    <form method="post" action="/cart/">
+    {% csrf_token %}
+        <header>
+            <h1>Menu</h1>
+            {% if log_in %}
+                <div class="cart">
+                    <button class="cart-button" type="submit"><img src="/static/images/cart-icon.png" alt="Cart"></button>
+                </div>
+            {% else %}
+                <div class="cart">
+                    <label class="cart-button">Login to add to cart</label>
+                </div>
+            {% endif %}
+        </header>
+
+        <div class="category-container">
+            {% for category in categories %}
+            <h2><img src="{{ category.icon }}" alt="Category name">{{ category.name }}</h2>
+            <div class="items">
+                {% for item in category.menu_items %}
+
+                <div class="item">
+                    <input type="hidden" name="item_name_{{ item.id }}" value="{{ item.name }}">
+                    <div class="item-name">{{ item.name }}</div>
+                    <img class="item-photo" src="/static/images/menu%20images/{{ item.image }}" alt="{{ item.name }}">
+                    <div class="item-price">₹ {{ item.price }}</div>
+                    <div class="number-option">
+                        <label for="item-quantity" style="font-size: 18px">Quantity: </label>
+                        <input type="number" name="item_quantity_{{ item.id }}" id="item-quantity" min="0" value="0">
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endfor %}
+        </div>
+    </form>
+    </div>
+</body>
+</html>

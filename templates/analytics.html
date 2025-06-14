@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bhoite's Cafe | Product Analysis</title>
+    <!-- Include Plotly.js from a CDN. Make sure to use a recent stable version. -->
+    <script src="https://cdn.plot.ly/plotly-2.30.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #444;
+            margin-bottom: 40px;
+        }
+        .chart-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body>
+    <h1>Analytics</h1>
+
+    <div class="chart-container">
+        <!-- Render the Plotly chart div here. The |safe filter is essential! -->
+        {{ chart_div|safe }}
+    </div>
+
+    <p style="text-align: center; margin-top: 30px;">
+        <a href="/" style="text-decoration: none; background-color: #007bff; color: white; padding: 10px 18px; border-radius: 6px; font-size: 16px;">Go Back</a>
+    </p>
+</body>
+</html>

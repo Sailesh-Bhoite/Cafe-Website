@@ -1,0 +1,129 @@
+.main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:  50px 0;
+}
+
+.cart img {
+    width: 30px; /* Adjust as needed */
+}
+
+.category-container {
+    margin-bottom: 20px;
+}
+
+.category-container h2 {
+    display: flex;
+    align-items: center;
+}
+
+.category-container h2 img {
+    width: 20px; /* Adjust as needed */
+    margin-right: 5px;
+}
+
+.items {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 40px 30px;
+}
+
+.item {
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 250px;
+}
+
+.item:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #a1daf6;
+}
+
+.item-name{
+    font-family: Bahnschrift, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.item-photo {
+    width: 250px;
+    border: 1px solid black;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.item-price{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 210px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.number-option{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.minus-button{
+    font-size: 20px;
+    width: 40px;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.minus-button:hover{
+    color: white;
+    background-color: #dd6c6c;
+}
+
+.item-quantity{
+    font-size: 15px;
+}
+
+.plus-button{
+    font-size: 20px;
+    width: 40px;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.plus-button:hover{
+    color: white;
+    background-color: #62cd52;
+}
+
+.selected {
+    border: 2px solid blue; /* Example selected style */
+    background-color: #57cf76;
+}
+
+input[type="number"] {
+    width: 60px; /* Adjust width as needed */
+    text-align: center; /* Center-align the numbers */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 16px;
+    cursor: default; /* Indicate that the field is not editable */
+}
+
+input[type="number"]:focus {
+    outline: none; /* Remove focus outline to make it look smoother */
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle glow */
+}

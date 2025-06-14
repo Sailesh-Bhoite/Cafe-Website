@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bhoite's Cafe | Create an Account</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        .create-account-form {
+            background: #fff;
+            padding: 40px;
+            border: 2px solid black;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        .create-account-form h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            text-align: center;
+        }
+        .create-account-form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .create-account-form input[type="text"],
+        .create-account-form input[type="password"],
+        .create-account-form input[type="email"]{
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .create-account-form button {
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .create-account-form button:hover {
+            background: #0056b3;
+        }
+        .create-account-form{
+            margin-top: 20px;
+            text-align: center;
+        }
+        .create-account-form .create-account a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .create-account-form .create-account a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div class="create-account-form">
+        <h2>Enter Your Information</h2>
+        <form method="post">
+            {% csrf_token %}
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Create Account</button>
+        </form>
+    </div>
+</body>
+</html>

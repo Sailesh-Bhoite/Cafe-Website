@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhoite's Café</title>
+    <link rel="stylesheet" href="/static/css/home.css">
+</head>
+<body>
+{% include 'navbar.html' %}
+
+    <!-- Homepage Content -->
+    <div class="hero">
+        <div class="overlay">
+            <h1 style="color: #c9ff00">Welcome to <br>Bhoite's Café</h1>
+        </div>
+    </div>
+
+<div class="location-container">
+    <div class="location-header">
+        <h2>Our Location</h2>
+    </div>
+    <div class="location-details">
+        <div class="address">
+            <h3>Address:</h3>
+            <p>123 Cafe Street, Pune, Maharashtra, India</p>
+        </div>
+        <div class="contact">
+            <h3>Contact:</h3>
+            <p>Phone: +91 9561191284</p>
+            <p>Email: info@yourcafe.com</p>
+        </div>
+        <div class="hours">
+            <h3>Hours:</h3>
+            <p>Monday - Saturday: 8:00 AM–10:00 PM</p>
+            <p>Sunday: 10:00 AM–8:00 PM</p>
+        </div>
+    </div>
+    <div class="location-map">
+        <img src="/static/images/location-img.jpg" alt="Location">
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Contact Us: 9561191284</p>
+        <p>
+            <a href="https://twitter.com" target="_blank"><img alt="twitter" src="/static/images/twitter-icon.png"></a>
+            <a href="https://facebook.com" target="_blank"><img alt="facebook" src="/static/images/facebook-logo.png"></a>
+            <a href="https://instagram.com" target="_blank"><img alt="instagram" src="/static/images/instagram-logo.png"></a>
+        </p>
+    </footer>
+</body>
+</html>
